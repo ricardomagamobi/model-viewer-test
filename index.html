@@ -11,27 +11,59 @@
             width:90%;
             height: 500px;
         }
+
+        .ar-button {
+          background-image: url(https://modelviewer.dev/assets/ic_view_in_ar_new_googblue_48dp.png);
+          background-repeat: no-repeat;
+          background-size: 20px 20px;
+          background-position: 12px 50%;
+          background-color: #fff;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          white-space: nowrap;
+          bottom: 132px;
+          padding: 0px 16px 0px 40px;
+          font-family: Roboto Regular, Helvetica Neue, sans-serif;
+          font-size: 14px;
+          color:#4285f4;
+          height: 36px;
+          line-height: 36px;
+          border-radius: 18px;
+          border: 1px solid #DADCE0;
+        }
+
+      .ar-button:active {
+        background-color: #E8EAED;
+      }
+
+      .ar-button:focus {
+        outline: none;
+      }
+
+      .ar-button:focus-visible {
+        outline: 1px solid #4285f4;
+      }
     </style>
   </head>
   <body>
     <main>
-        <h1>Welcome to My Website</h1>  
-    </main>
-    
-        <model-viewer src="https://modelviewer.dev/assets/ShopifyModels/Chair.glb" ar shadow-intensity="1" camera-controls touch-action="pan-y">
-        <button slot="ar-button" id="ar-button">
+        <h1>Teste 3d AR - Magazord</h1>  
+    </main>    
+      <model-viewer src="chair.glb" ar shadow-intensity="1" camera-controls touch-action="pan-y">
+        <button slot="ar-button" class="ar-button">
           Olhar no seu espaço!
         </button>
       </model-viewer>
-        <model-viewer src="abajur.glb" ar shadow-intensity="1" camera-controls touch-action="pan-y">
-        <button slot="ar-button" id="ar-button">
-          View in your space
+      <model-viewer src="abajur.glb" ar shadow-intensity="1" camera-controls touch-action="pan-y">
+        <button slot="ar-button" class="ar-button">
+          Olhar no seu espaço!
         </button>
       </model-viewer>
-
+      <model-viewer src="geoplanter.glb" ar shadow-intensity="1" camera-controls touch-action="pan-y">
+        <button slot="ar-button" class="ar-button">
+          Olhar no seu espaço!
+        </button>
+      </model-viewer>
   </body>
 </html>
-
-
-
-<!-- Use it like any other HTML element -->
